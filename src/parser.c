@@ -1,12 +1,5 @@
 #include "parser.h"
-#include <stdio.h>
-#include <stdlib.h>
-
-// print program correct usage and exit
-static void usage(const char *program) {
-  fprintf(stderr, "Usage: %s <addr> <port>", program);
-  exit(EXIT_FAILURE);
-}
+#include "logger.h"
 
 // parse command line arguments
 Params parse_args(int argc, char **argv) {

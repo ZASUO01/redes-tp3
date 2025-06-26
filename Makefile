@@ -1,4 +1,5 @@
-ADDR = 2804:1f4a:dcc:ff03::1
+ADDR4 = 150.164.213.243
+ADDR6 = 2804:1f4a:dcc:ff03::1
 PORT = 51511
 
 CC = gcc
@@ -31,7 +32,7 @@ $(BIN) $(OBJ):
 	mkdir -p $@
 
 run:
-	$(TARGET) $(ADDR) $(PORT)
+	$(TARGET) $(ADDR4) $(PORT)
 
 clean:
 	rm -rf $(BIN) $(OBJ) $(LOG)
